@@ -24,6 +24,14 @@ const compareGuesses = (human, computer, target) => {
 };
 
 const updateScore = (winner) => {
-    let humanScore = 0;
-    let computerScore = 0;x
-}
+  if (winner === 'human') {
+    humanScore++;
+  } else if (winner === 'computer') {
+    computerScore++;
+  }
+};
+
+const advanceRound = () => {
+  currentRoundNumber++;
+};
+
